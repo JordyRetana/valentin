@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 1rem;
+	margin: 10px 0;
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+
+#nav-inicio,
+#nav-cena,
+#nav-regalo,
+#nav-extra {
+    display: inline-block; 
+    margin: 5px; 
+	margin-top: -60px; 
+
+    padding: 5px 10px; 
+    border: 3px solid #fff; 
+    border-radius: 50px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    text-align: center;
+}
+
+#nav-inicio a,
+#nav-cena a,
+#nav-regalo a,
+#nav-extra a {
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: bold; 
+    display: inline-block; 
+    padding: 5px 10px; 
+	font-size: 10px; 
+
+}
+
+#nav-inicio:hover,
+#nav-cena:hover,
+#nav-regalo:hover,
+#nav-extra:hover {
+    background-color: rgba(237, 35, 35, 0.5); 
+    cursor: pointer;
+}
+
+
+
+
+
+/**/
+
+#nav-inicioo22,
+#nav-cenaa22,
+#nav-regaloo22,
+#nav-extraa22 {
+    display: inline-block; 
+    margin: 5px; 
+	/* margin-top: -60px;  */
+
+    padding: 5px 10px; 
+    border: 3px solid #fff; 
+    border-radius: 50px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    text-align: center;
+}
+
+#nav-inicioo22 a,
+#nav-cenaa22 a,
+#nav-regaloo22 a,
+#nav-extraa22 a {
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: bold; 
+    display: inline-block; 
+    padding: 5px 10px; 
+	font-size: 10px; 
+
+}
+
+#nav-inicioo22:hover,
+#nav-cenaa22:hover,
+#nav-regaloo22:hover,
+#nav-extraa22:hover {
+    background-color: rgba(237, 35, 35, 0.5); 
+    cursor: pointer;
+}
+
+/**/
+
+
+
+
+.large {
+	font-size: 1.5rem;
+}
+
+.display-1 {
+	font-size: 5.5rem;
+	font-weight: 300;
+}
+
+.display-2 {
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: capitalize;
+}
+
+.display-3 {
+	font-size: 3.5rem;
+	font-weight: 300;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 12px 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-radius: 50px;
+	width: 200px;
+	text-align: center;
+}
+
+#scroll-container {
+    scroll-behavior: smooth; /* Hacer scroll suave solo aquí */
+}
+
+/* Resto del código del botón */
+.btn-red-outline {
+	background: #f6a8ae;
+	border: 5px solid #e8e6e6;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.btn-red-outline:active {
+    transform: translateY(2px); /* Baja el botón al presionar */
+}
+.btn-red {
+	background: #dd2e0d;
+	border: 2px solid #dd2e0d;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.btn-outline {
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/* Mainheader */
+#mainheader {
+	background: url('../img/SanValentin.width-1920.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+/* Mainheader No */
+#mainheader-no {
+	background: url('../img/nop.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+#mainheader-no .display-3 {
+	padding-top: 80px;
+}
+
+/* Navbar */
+#navbar {
+	overflow: auto;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#navbar a {
+	color: #fff;
+}
+
+#navbar .logo {
+	font-family: 'Dancing Script', cursive;
+	float: left;
+	font-size: 40px;
+}
+
+#navbar ul {
+	list-style: none;
+	float: right;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+#navbar ul li a {
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Navbar red */
+.navbar-red {
+	background: #e8c8ca;
+}
+
+/* Showcase */
+#showcase {
+    text-align: center;
+    padding-top: 200px;
+    color: #fff; /* Mantén el color blanco del texto */
+    transition: transform 0.3s; /* Transición suave para el movimiento */
+}
+
+/* Cuando el cursor pasa por encima */
+#showcase:hover {
+    transform: translateY(-5px); /* Eleva el contenido cuando el cursor pasa por encima */
+}
+#valentine-header {
+    transition: transform 0.3s;
+	transform: translateY(-5px); /* Eleva el contenido cuando el cursor pasa por encima */
+}
+
+
+
+
+#showcase p {
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.193); /* Fondo oscuro semitransparente */
+    border-radius: 30px;
+    color: white; /* Asegúrate que el texto sea blanco */
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Transición suave para el cambio de fondo y elevación */
+}
+
+/* Cuando el cursor pasa por encima */
+#showcase p:hover {
+    transform: translateY(-5px); /* Eleva el texto cuando se pasa el cursor por encima */
+    background-color: rgba(237, 35, 35, 0.7); /* Cambia el color de fondo cuando el cursor pasa por encima */
+}
+
+/* Cuando el cuadro es presionado */
+#showcase p:active {
+    transform: translateY(0); /* Vuelve a su posición original cuando se presiona */
+    background-color: rgba(237, 35, 35, 0.5); /* Mantén el color de fondo deseado al presionar */
+}
+
+
+/* Valentine */
+#valentine {
+	background: #a3000d;
+	padding: 80px 0;
+	color: #fff;
+}
+.valentine-row {
+	display: flex;
+	
+}
+
+.valentine-row-text {
+	padding-right: 40px;
+}
+
+.valentine-row-btn {
+	display: flex;
+	padding-top: 1px;
+}
+
+.valentine-row-btn-yes,
+.valentine-row-btn-no {
+	padding: 20px;
+}
+
+/* Yes */
+#yes {
+    display: none; /* Ocultar la sección de forma predeterminada */
+}
+
+/* Asegúrate de que la transición sea suave cuando se muestre */
+#yes.show {
+    display: block;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+
+.yes-row {
+	display: flex;
+}
+.yes-row-box {
+	padding: 15px;
+}
+
+.yes-row-box img {
+	width: 100%;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.yes-row-box a {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Dinner, Gift & Show */
+#dinner,
+#gift,
+#show {
+    padding: 120px 0;
+    font-family: 'Arial', sans-serif; /* Fuente más clara y moderna */
+    line-height: 1.6; /* Aumenta la altura de la línea para mayor separación entre las líneas de texto */
+}
+
+.dinner-row,
+.gift-row,
+.show-row {
+    display: flex;
+    justify-content: space-between; /* Añade espacio entre las columnas */
+    align-items: center; /* Alinea los elementos de forma centrada */
+}
+
+.dinner-row img,
+.gift-row img,
+.show-row img {
+    width: 600px;
+    border-radius: 20px;
+    margin-right: 30px; /* Añade espacio entre la imagen y el texto */
+}
+
+.dinner-row-text,
+.gift-row-text,
+.show-row-text {
+    padding-left: 30px;
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+    line-height: 1.8; /* Mayor espacio entre párrafos */
+    max-width: 600px; /* Limita el ancho del texto para que no se vea demasiado extendido */
+}
+
+.dinner-row-text h1,
+.gift-row-text h1,
+.show-row-text h1 {
+    font-size: 2.5em; /* Título más grande para destacar */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #e63946; /* Color llamativo para los títulos */
+}
+
+.dinner-row-text p,
+.gift-row-text p,
+.show-row-text p {
+    font-size: 1.1em; /* Tamaño de fuente para los párrafos más grande */
+    margin-bottom: 20px; /* Espacio debajo de cada párrafo */
+    text-align: justify; /* Alinea el texto de manera justificada para mejor presentación */
+}
+
+/* Mainfooter */
+#mainfooter {
+	background: #ecbec1;
+	text-align: center;
+	padding: 30px;
+	text-decoration: none; 
+    color: #ffffff; 
+
+}
+#cry-text {
+    background-color: #f6a8afca; /* Fondo suave y bonito */
+    padding: 10px 80px; /* Más espacio horizontal */
+    text-align: center; /* Centrado horizontal */
+    border-radius: 10000px;
+    max-width: 1000px; /* Aumenté aún más el tamaño del contenedor horizontalmente */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición */
+    color: #333; /* Color del texto */
+}
+
+
