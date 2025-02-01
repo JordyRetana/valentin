@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link
+		  rel="stylesheet"
+		  media="screen and (max-width:768px)"
+		  href="css/mobile.css"
+		/>
+		<title>Valentines | Welcome</title>
+		<!-- Añadir script de Canvas Confetti -->
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+	  </head>
+	<body>
+		<header id="mainheader">
+			<div id="navbar">
+				<div class="container">
+					<h1 class="logo"><a href="index.html">AMOR</a></h1>
+				</div>
+				<div class="container-nav">
+					<ul aria-label="Navegación principal">
+						<li id="nav-cena"><a href="dinner.html">CENA</a></li>
+						<li id="nav-regalo"><a href="gift.html">REGALO</a></li>
+						<li id="nav-extra"><a href="show.html">EXTRA</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="showcase">
+				<div class="container">
+					<h1 id="valentine-header" class="display-1">Happy Valentine's Day</h1>
+					<p class="large">
+						Hace un año celebramos nuestro primer San Valentín juntos, y desde entonces cada día a tu lado ha sido un regalo. 
+						Hoy, más que nunca, quiero seguir construyendo recuerdos inolvidables contigo. 💖
+					</p>
+					<a href="#valentine" class="btn btn-red-outline">Be my valentine</a>
+				</div>
+			</div>
+		</header>
+
+		<section id="valentine">
+			<div class="container">
+				<div class="valentine-row">
+					<div class="valentine-row-text">
+						<p class="display-2">¿Quieres ser mi Valentín?</p>
+					</div>
+					<div class="valentine-row-btn">
+						<div class="valentine-row-btn-yes">
+							<a href="#yes" class="btn btn-red">Yes</a>
+						</div>
+						<div class="valentine-row-btn-no">
+							<a href="no.html" class="btn btn-outline">No</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="yes">
+			<div class="container">
+				<div class="yes-row">
+					<div class="yes-row-box">
+						<img src="/img/sang.png" alt="" />
+						<a href="dinner.html" class="btn btn-red">CENA</a>
+					</div>
+					<div class="yes-row-box">
+						<img src="/img/regalo.png" alt="" />
+						<a href="gift.html" class="btn btn-red">REGALO</a>
+					</div>
+					<div class="yes-row-box">
+						<img src="/img/duda.png" alt="" />
+						<a href="show.html" class="btn btn-red">EXTRA</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			document.querySelector('.btn-red').addEventListener('click', function(event) {
+			  event.preventDefault(); // Evitar el comportamiento por defecto del enlace (navegar a otro lugar)
+			  document.getElementById('yes').style.display = 'block'; // Mostrar la sección #yes
+			  document.getElementById('yes').scrollIntoView({ behavior: 'smooth' }); // Desplazarse suavemente hacia la sección #yes
+	  
+			  // Lanza el confeti
+			  confetti({
+				particleCount: 2000, // Aumentar la cantidad de confeti
+				spread: 180, // Confeti disperso por toda la pantalla
+				origin: { y: 0.6 },
+				colors: ['#ff6f61', '#ffeb3b', '#8e44ad', '#1f78b4'],
+			  });
+			});
+		  </script>
+	</body>
+	
+</html>
